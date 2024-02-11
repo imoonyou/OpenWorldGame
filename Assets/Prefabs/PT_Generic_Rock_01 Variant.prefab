@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3338355237460713180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 34.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 34.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 34.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 606.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 460.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.29096356
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.25688645
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6867351
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6146093
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620098201178672556, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140774597986965270, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
+      propertyPath: m_Name
+      value: PT_Generic_Rock_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58cd8dc8c2359174baa15aa31e302c8b, type: 3}
