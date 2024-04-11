@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class StatueInteraction : MonoBehaviour
 {
-    
-      public int statueNumber; // Unique identifier for each statue
+
+    public int statueNumber; // Unique identifier for each statue
     public GameManager gameManager; // Reference to the GameManager script
 
     public bool canInteract = true; // Flag to check if interaction is allowed
@@ -14,13 +14,15 @@ public class StatueInteraction : MonoBehaviour
 
     private GameObject summonedMonster;
 
-    private BoxCollider colliderInteract;
+    //private BoxCollider colliderInteract;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && canInteract)
         {
             canInteract = false;
+
+           
             SummonMonster();
             //gameManager.HandleStatueInteraction(statueNumber);
         }
@@ -37,7 +39,7 @@ public class StatueInteraction : MonoBehaviour
         summonedMonster = Instantiate(monsterPrefab, transform.position, Quaternion.identity);
         Monster monsterComponent = summonedMonster.GetComponent<Monster>();
         AnimationHandle monster = summonedMonster.GetComponent<AnimationHandle>();
-        if(monster != null)
+        if (monster != null)
         {
             GameObject playerObject = GameObject.FindWithTag("Player");
             monster.OnDeath += HandleMonsterDeath;
@@ -59,6 +61,5 @@ public class StatueInteraction : MonoBehaviour
     {
         gameManager.HandleStatueInteraction(statueNumber);
     }
-   
-     
+
 }

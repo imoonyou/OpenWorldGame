@@ -114,12 +114,23 @@ public class AttackController : MonoBehaviour
         {
             audioSource.pitch = 1;
             audioSource.PlayOneShot(hitSound);
+            Boss enemy = FindObjectOfType<Boss>();
+            AnimationHandle T = FindObjectOfType<AnimationHandle>();
 
+            //if (hit.transform.TryGetComponent<AnimationHandle>(out AnimationHandle T))
+            //{
+            //T.TakeDamage(3);
 
-            if (hit.transform.TryGetComponent<AnimationHandle>(out AnimationHandle T))
+            //}
+            if (T != null)
             {
                 T.TakeDamage(attackDamage);
             }
+            else if(enemy != null)
+            {
+                enemy.BossTakeDamage(attackDamage);
+            }
         }
     }
+
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Actor : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class Actor : MonoBehaviour
     public HealthBar healthBar;
 
     public string Respawn;
+    
+
+    private static int deathCount = 0; // Static variable to store the death count
+    public TextMeshProUGUI deathCountText;
+  
 
     void Awake()
     {
@@ -22,6 +28,7 @@ public class Actor : MonoBehaviour
     private void Start()
     {
         
+        UpdateDeathCount();
         healthBar.SetSliderMax(maxHealth);
     }
 
@@ -35,10 +42,9 @@ public class Actor : MonoBehaviour
 
     void Death()
     {
-        //Destroy(gameObject);
+        deathCount++;
         SceneManager.LoadScene(Respawn);
-        // Death function
-        // TEMPORARY: Destroy Object
+        UpdateDeathCount();
     }
 
     public void ApplyKnockback(Vector3 knockbackDirection)
@@ -48,5 +54,10 @@ public class Actor : MonoBehaviour
 
         // Apply force in the opposite direction of knockbackDirection
         body.AddForce(-knockbackDirection * 50f, ForceMode.Impulse);
+    }
+
+    public void UpdateDeathCount()
+    {
+        deathCountText.text = deathCount.ToString();
     }
 }
