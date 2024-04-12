@@ -9,15 +9,6 @@ public class Boss : MonoBehaviour
     //private int maxHealth = 3;
     public event Action OnBossDeath;
 
-    private void Update()
-    {
-        Debug.Log("boss:" + currentHealth);
-    }
-    //private void OnEnable()
-    //{
-        //currentHealth = 3;
-    //}
-
     public void BossTakeDamage(int amount)
     {
         currentHealth -= amount;

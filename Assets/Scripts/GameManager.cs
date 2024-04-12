@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject activeCount;
     [SerializeField] private GameObject activeLabel;
     [SerializeField] private TextMeshProUGUI activeStatue;
+    [SerializeField] private GameObject crossHair;
     //private static int statueCount = 0;
 
 
@@ -75,6 +76,7 @@ public class GameManager : MonoBehaviour
         healthbar.SetActive(false);
         activeCount.SetActive(false);
         activeLabel.SetActive(false);
+        crossHair.SetActive(false);
     }
 
 
